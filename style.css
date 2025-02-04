@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilrouy";
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 247, 233);
+}
+#panel {
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #fff;
+}
+#ptop {
+  display: flex;
+  padding: 0px 30%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 146, 0, 0.899);
+}
+.elem {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #fff;
+}
+.elem h2{
+    font-size: 17px;
+}
+
+.box {
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+#pbtm{
+    
+    padding: 20px;
+    width: 100%;
+    height: calc(100%  - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.bubble{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    width:50px;
+    height:50px;
+    background-color: rgba(0, 146, 0, 0.899);
+    border-radius: 50%;
+    border: 1px solid;
+    
+}
+.bubble:hover{
+    background-color: rgba(18, 70, 18, 0.899);
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #panel {
+      width: 90%;  /* Even smaller panel on very small screens */
+      height: 90%;  /* Keep it flexible */
+    }
+  
+    #ptop {
+      padding: 0px 5%;
+    }
+  
+    .elem {
+      flex-direction: column; /* Stack the elements vertically */
+      gap: 10px;
+    }
+  
+    .box {
+      font-size: 14px;
+      padding: 7px 12px;
+    }
+  
+    #pbtm {
+      flex-direction: row; /* Keep row layout */
+      justify-content: space-evenly;
+    }
+  
+    .bubble {
+      width: 35px;
+      height: 35px;
+      font-size: 12px;
+      margin: 4px;
+    }
+  
+    button {
+      padding: 7px 12px;
+      font-size: 12px;
+    }
+  }
+  
+  /* For max-width 450px */
+  @media (max-width: 500px) {
+    #panel {
+      width: 90%;  /* Further reduce panel size */
+      height: 85%;  /* Ensure it fits well */
+    }
+  
+    #ptop {
+      padding: 0px 5%;
+    }
+  
+    .elem {
+      flex-direction: column; /* Stack the elements vertically */
+      gap: 8px;
+    }
+  
+    .box {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  
+    #pbtm {
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 16px;
+    }
+  
+    .bubble {
+      width: 30px;
+      height: 30px;
+      font-size: 10px;
+      margin: 1px;
+    }
+  
+    button {
+      padding: 6px 10px;
+      font-size: 10px;
+    }
+  }
+  
+  /* For medium screens (tablets) */
+  @media (max-width: 1024px) {
+    #panel {
+      width: 85%;
+      height: 85%;
+    }
+  
+    #ptop {
+      padding: 0px 15%;
+    }
+  
+    .box {
+      font-size: 18px;
+      padding: 9px 18px;
+    }
+  
+    #pbtm {
+      gap: 14px;
+    }
+  
+    .bubble {
+      width: 45px;
+      height: 45px;
+      font-size: 16px;
+    }
+  
+    button {
+      padding: 9px 18px;
+      font-size: 15px;
+    }
+  }
+  
+  /* For large screens (desktops) */
+  @media (min-width: 1025px) {
+    #panel {
+      width: 80%;
+      height: 80%;
+    }
+  
+    #ptop {
+      padding: 0px 30%;
+    }
+  
+    .box {
+      font-size: 22px;
+      padding: 12px 20px;
+    }
+  
+    #pbtm {
+      gap: 25px;
+    }
+  
+    .bubble {
+      width: 50px;
+      height: 50px;
+      font-size: 22px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }

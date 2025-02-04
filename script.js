@@ -39,7 +39,7 @@ function increasescore(){
 }
 
 
-document.que1 = rySelector("#pbtm").addEventListener("click", function (e) {
+document.querySelector("#pbtm").addEventListener("click", function (e) {
   if (timer != 0) {
     let hitval = document.querySelector("#hit").innerText;
     if (e.target.innerText == hitval) {

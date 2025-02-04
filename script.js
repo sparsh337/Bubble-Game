@@ -40,11 +40,13 @@ function increasescore(){
 
 
 document.querySelector("#pbtm").addEventListener("click",function(e){
-    console.log(e.target.innerText )
-    let hitval =document.querySelector("#hit").innerText;
+if(timer!=0){
+        let hitval =document.querySelector("#hit").innerText;
     if(e.target.innerText == hitval){
         increasescore();
         hitnumber();
     }
     makebubble()
+
+    }
 });

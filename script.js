@@ -39,14 +39,13 @@ function increasescore(){
 }
 
 
-document.querySelector("#pbtm").addEventListener("click",function(e){
-if(timer!=0){
-        let hitval =document.querySelector("#hit").innerText;
-    if(e.target.innerText == hitval){
-        increasescore();
-        hitnumber();
+document.que1 = rySelector("#pbtm").addEventListener("click", function (e) {
+  if (timer != 0) {
+    let hitval = document.querySelector("#hit").innerText;
+    if (e.target.innerText == hitval) {
+      increasescore();
+      hitnumber();
     }
-    makebubble()
-
-    }
+    makebubble();
+  }
 });

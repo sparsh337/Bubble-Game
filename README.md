@@ -2,7 +2,7 @@
 
 A fun and interactive bubble popping game built using HTML, CSS, and JavaScript. The game features a timer and utilizes the event bubbling concept for enhanced gameplay mechanics.
 
-Demo 
+Demo https://sparsh337.github.io/Bubble-Game/
 
 Features
 - Pop bubbles within a set time limit
